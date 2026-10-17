@@ -25,10 +25,7 @@ except FileNotFoundError:
 def get_live_search_data(query):
     """Fetches real-time text and images from Tavily Search API."""
     try:
-        # Optimized query for sports context
         optimized_query = f"{query} cricket news updates"
-        
-        # Tavily search fetching both content and images
         response = tavily_client.search(
             query=optimized_query, 
             search_depth="basic", 
@@ -36,12 +33,10 @@ def get_live_search_data(query):
             max_results=3
         )
         
-        # Format text results
         search_text = "\n\n".join([f"Title: {res['title']}\nInfo: {res['content']}" for res in response.get('results', [])])
         if not search_text:
             search_text = "TOOL_FAILURE: No recent news found."
             
-        # Get the first relevant image if available
         images = response.get('images', [])
         image_url = images[0] if images else None
         
@@ -103,15 +98,13 @@ for message in st.session_state.chat_history:
             st.image(message["image"], width=300)
         st.markdown(message["content"])
 
-# 7. Capture user input
+# 7. Capture user input (Mic in Sidebar, Text in Center)
 final_query = None
 
-# Move the large audio box to the sidebar to keep the center clean
 with st.sidebar:
     st.markdown("### 🎤 Voice Search")
     voice_input = st.audio_input("Tap to speak")
 
-# Keep the text input at the bottom
 text_input = st.chat_input("Type your question here...")
 
 if text_input:
@@ -135,7 +128,6 @@ if final_query:
     with st.chat_message("assistant"):
         with st.spinner("Analyzing data and fetching media..."):
             try:
-                # Fetch text and image from Tavily
                 live_web_data, fetched_image_url = get_live_search_data(final_query)
                 
                 st.info(f"Agent Web Tool Status: {live_web_data[:100]}...")
@@ -157,12 +149,14 @@ if final_query:
                 5. DO NOT output text like "(Displaying photo)" or mention images.
                 """
                 
+                # FIXED TOKEN LIMIT HERE
                 chat_completion = client.chat.completions.create(
                     messages=[
                         {"role": "system", "content": agent_system_instruction},
                         {"role": "user", "content": final_query}
                     ],
                     model="qwen/qwen3.8-27b", 
+                    max_tokens=500, 
                 )
                 answer = chat_completion.choices[0].message.content
                 
