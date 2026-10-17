@@ -1,0 +1,126 @@
+{
+"last_updated": "October 2026",
+"tournament_info": {
+"name": "World Cricket Dashboard",
+"description": "Live comprehensive statistics for top international cricketers."
+},
+"player_stats": {
+"Virat Kohli": {
+"role": "Top-order Batter",
+"country": "India",
+"formats": {
+"Test": {"matches": 115, "runs": 8900, "centuries": 29, "fifties": 30, "highest_score": 254},
+"ODI": {"matches": 295, "runs": 13906, "centuries": 50, "fifties": 72, "highest_score": 183},
+"T20I": {"matches": 125, "runs": 4188, "centuries": 1, "fifties": 38, "highest_score": 122}
+}
+},
+"Rohit Sharma": {
+"role": "Opening Batter",
+"country": "India",
+"formats": {
+"Test": {"matches": 62, "runs": 4200, "centuries": 12, "fifties": 17, "highest_score": 212},
+"ODI": {"matches": 265, "runs": 10866, "centuries": 31, "fifties": 55, "highest_score": 264},
+"T20I": {"matches": 159, "runs": 4231, "centuries": 5, "fifties": 32, "highest_score": 121}
+}
+},
+"Sachin Tendulkar": {
+"role": "Top-order Batter (Retired)",
+"country": "India",
+"formats": {
+"Test": {"matches": 200, "runs": 15921, "centuries": 51, "fifties": 68, "highest_score": 248},
+"ODI": {"matches": 463, "runs": 18426, "centuries": 49, "fifties": 96, "highest_score": 200},
+"T20I": {"matches": 1, "runs": 10, "centuries": 0, "fifties": 0, "highest_score": 10}
+}
+},
+"Joe Root": {
+"role": "Top-order Batter",
+"country": "England",
+"formats": {
+"Test": {"matches": 147, "runs": 12500, "centuries": 35, "fifties": 64, "highest_score": 254},
+"ODI": {"matches": 171, "runs": 6522, "centuries": 16, "fifties": 39, "highest_score": 133},
+"T20I": {"matches": 32, "runs": 893, "centuries": 0, "fifties": 5, "highest_score": 90}
+}
+},
+"Steve Smith": {
+"role": "Top-order Batter",
+"country": "Australia",
+"formats": {
+"Test": {"matches": 109, "runs": 9685, "centuries": 32, "fifties": 41, "highest_score": 239},
+"ODI": {"matches": 158, "runs": 5356, "centuries": 13, "fifties": 32, "highest_score": 131},
+"T20I": {"matches": 67, "runs": 1094, "centuries": 0, "fifties": 5, "highest_score": 90}
+}
+},
+"Kane Williamson": {
+"role": "Top-order Batter",
+"country": "New Zealand",
+"formats": {
+"Test": {"matches": 102, "runs": 8881, "centuries": 32, "fifties": 35, "highest_score": 251},
+"ODI": {"matches": 165, "runs": 6810, "centuries": 13, "fifties": 45, "highest_score": 148},
+"T20I": {"matches": 93, "runs": 2575, "centuries": 0, "fifties": 18, "highest_score": 95}
+}
+},
+"Babar Azam": {
+"role": "Top-order Batter",
+"country": "Pakistan",
+"formats": {
+"Test": {"matches": 55, "runs": 4000, "centuries": 9, "fifties": 26, "highest_score": 196},
+"ODI": {"matches": 117, "runs": 5729, "centuries": 19, "fifties": 32, "highest_score": 158},
+"T20I": {"matches": 123, "runs": 4145, "centuries": 3, "fifties": 36, "highest_score": 122}
+}
+},
+"Jasprit Bumrah": {
+"role": "Fast Bowler",
+"country": "India",
+"formats": {
+"Test": {"matches": 38, "wickets": 170, "best_bowling": "6/27", "five_wicket_hauls": 10, "economy": 2.70},
+"ODI": {"matches": 89, "wickets": 149, "best_bowling": "6/19", "five_wicket_hauls": 2, "economy": 4.67},
+"T20I": {"matches": 70, "wickets": 89, "best_bowling": "3/11", "five_wicket_hauls": 0, "economy": 6.27}
+}
+},
+"Pat Cummins": {
+"role": "Fast Bowler",
+"country": "Australia",
+"formats": {
+"Test": {"matches": 62, "wickets": 269, "best_bowling": "6/23", "five_wicket_hauls": 12, "economy": 2.75},
+"ODI": {"matches": 88, "wickets": 141, "best_bowling": "5/70", "five_wicket_hauls": 1, "economy": 5.30},
+"T20I": {"matches": 57, "wickets": 66, "best_bowling": "3/15", "five_wicket_hauls": 0, "economy": 7.45}
+}
+},
+"Rashid Khan": {
+"role": "Leg Spinner",
+"country": "Afghanistan",
+"formats": {
+"Test": {"matches": 5, "wickets": 34, "best_bowling": "7/137", "five_wicket_hauls": 4, "economy": 3.10},
+"ODI": {"matches": 105, "wickets": 190, "best_bowling": "7/18", "five_wicket_hauls": 4, "economy": 4.20},
+"T20I": {"matches": 92, "wickets": 148, "best_bowling": "5/3", "five_wicket_hauls": 2, "economy": 6.05}
+}
+},
+"Ravindra Jadeja": {
+"role": "All-Rounder",
+"country": "India",
+"formats": {
+"Test": {"matches": 73, "runs": 3050, "centuries": 4, "wickets": 298, "five_wicket_hauls": 13},
+"ODI": {"matches": 197, "runs": 2756, "centuries": 0, "wickets": 220, "five_wicket_hauls": 2},
+"T20I": {"matches": 74, "runs": 515, "centuries": 0, "wickets": 53, "five_wicket_hauls": 0}
+}
+},
+"Mitchell Starc": {
+"role": "Fast Bowler",
+"country": "Australia",
+"formats": {
+"Test": {"matches": 89, "wickets": 358, "best_bowling": "6/50", "five_wicket_hauls": 14, "economy": 3.40},
+"ODI": {"matches": 121, "wickets": 236, "best_bowling": "6/28", "five_wicket_hauls": 9, "economy": 5.15},
+"T20I": {"matches": 65, "wickets": 79, "best_bowling": "4/20", "five_wicket_hauls": 0, "economy": 7.70}
+}
+},
+"MS Dhoni": {
+"role": "Wicketkeeper Batter (Retired)",
+"country": "India",
+"formats": {
+"Test": {"matches": 90, "runs": 4876, "centuries": 6, "dismissals": 294},
+"ODI": {"matches": 350, "runs": 10773, "centuries": 10, "dismissals": 444},
+"T20I": {"matches": 98, "runs": 1617, "centuries": 0, "dismissals": 91}
+}
+}
+}
+}
