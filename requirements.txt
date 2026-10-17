@@ -1,4 +1,4 @@
 streamlit
 groq
-duckduckgo-search
+tavily-python
 python-dotenv
